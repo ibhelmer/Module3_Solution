@@ -365,11 +365,11 @@
   @Example
     <code>
     // Set RB9 high (1)
-    Sw1_SetHigh();
+    SW1_SetHigh();
     </code>
 
 */
-#define Sw1_SetHigh()          LATBbits.LATB9 = 1
+#define SW1_SetHigh()          LATBbits.LATB9 = 1
 /**
   @Summary
     Sets the GPIO pin, RB9, low using LATBbits.LATB9.
@@ -389,11 +389,11 @@
   @Example
     <code>
     // Set RB9 low (0)
-    Sw1_SetLow();
+    SW1_SetLow();
     </code>
 
 */
-#define Sw1_SetLow()           LATBbits.LATB9 = 0
+#define SW1_SetLow()           LATBbits.LATB9 = 0
 /**
   @Summary
     Toggles the GPIO pin, RB9, using LATBbits.LATB9.
@@ -413,11 +413,11 @@
   @Example
     <code>
     // Toggle RB9
-    Sw1_Toggle();
+    SW1_Toggle();
     </code>
 
 */
-#define Sw1_Toggle()           LATBbits.LATB9 ^= 1
+#define SW1_Toggle()           LATBbits.LATB9 ^= 1
 /**
   @Summary
     Reads the value of the GPIO pin, RB9.
@@ -439,11 +439,11 @@
     uint16_t portValue;
 
     // Read RB9
-    postValue = Sw1_GetValue();
+    postValue = SW1_GetValue();
     </code>
 
 */
-#define Sw1_GetValue()         PORTBbits.RB9
+#define SW1_GetValue()         PORTBbits.RB9
 /**
   @Summary
     Configures the GPIO pin, RB9, as an input.
@@ -463,11 +463,11 @@
   @Example
     <code>
     // Sets the RB9 as an input
-    Sw1_SetDigitalInput();
+    SW1_SetDigitalInput();
     </code>
 
 */
-#define Sw1_SetDigitalInput()  TRISBbits.TRISB9 = 1
+#define SW1_SetDigitalInput()  TRISBbits.TRISB9 = 1
 /**
   @Summary
     Configures the GPIO pin, RB9, as an output.
@@ -487,11 +487,11 @@
   @Example
     <code>
     // Sets the RB9 as an output
-    Sw1_SetDigitalOutput();
+    SW1_SetDigitalOutput();
     </code>
 
 */
-#define Sw1_SetDigitalOutput() TRISBbits.TRISB9 = 0
+#define SW1_SetDigitalOutput() TRISBbits.TRISB9 = 0
 
 /**
     Section: Function Prototypes

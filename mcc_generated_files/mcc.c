@@ -74,7 +74,7 @@
 // DEVCFG0
 #pragma config DEBUG = ON    // Background Debugger Enable->Debugger is Enabled
 #pragma config JTAGEN = OFF    // JTAG Enable->JTAG Disabled
-#pragma config ICESEL = RESERVED    // ICE/ICD Comm Channel Select->Reserved
+#pragma config ICESEL = ICS_PGx1    // ICE/ICD Comm Channel Select->Communicate on PGEC1/PGED1
 #pragma config PWP = OFF    // Program Flash Write Protect->Disable
 #pragma config BWP = OFF    // Boot Flash Write Protect bit->Protection Disabled
 #pragma config CP = OFF    // Code Protect->Protection Disabled
@@ -103,6 +103,7 @@ void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    I2C2_Initialize();
     INTERRUPT_Initialize();
 
 }

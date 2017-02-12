@@ -53,6 +53,11 @@
 */
 void INTERRUPT_Initialize (void)
 {    
+    //    I2CMI: I2C2 Master Event
+    //    Priority: 1
+    //    SubPriority: 0
+        IPC9bits.I2C2IP = 1;
+        IPC9bits.I2C2IS = 0;
 
     //  Enable the multi vector
     INTCONbits.MVEC = 1;

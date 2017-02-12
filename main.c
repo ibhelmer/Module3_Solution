@@ -44,7 +44,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-
+#include "I2C_Drv.h"
 /*
                          Main application
  */
@@ -52,12 +52,28 @@ int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
-
-    while (1)
+    drvI2CInit();
+    //LED1_SetHigh();
+    while (1==1)
     {
+        
+        if (!SW1_GetValue())
+        {
+            if (drvI2CWriteByte(0x00, 0x00, 0x21 ))
+            {
+               LED1_SetHigh();
+            }
+            if (drvI2CWriteByte(0x14, 0xF5, 0x21 ))
+            {
+               LED2_SetHigh();
+            }
+            
+        }
+ 
         // Add your application code
     }
-
+    
+    LED2_SetHigh();
     return -1;
 }
 /**

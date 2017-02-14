@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="62">
   <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="f1" displayName="Datasheet" projectFiles="true">
+      <itemPath>21952b.pdf</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
@@ -13,6 +16,7 @@
         <itemPath>mcc_generated_files/i2c2.h</itemPath>
       </logicalFolder>
       <itemPath>I2C_Drv.h</itemPath>
+      <itemPath>portext.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -31,6 +35,7 @@
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>I2C_Drv.c</itemPath>
+      <itemPath>portext.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

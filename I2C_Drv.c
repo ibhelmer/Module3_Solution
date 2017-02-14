@@ -59,7 +59,7 @@ void drvI2CInit(void) {
 
 
 static void I2CIdle(void) {
-    UINT8 t = 5;
+    UINT8 t = 1;
     /* Wait until I2C Bus is Inactive */
     while (I2CCONbits.SEN || I2CCONbits.PEN || I2CCONbits.RCEN ||
             I2CCONbits.RSEN || I2CCONbits.ACKEN || I2CSTATbits.TRSTAT || t--);

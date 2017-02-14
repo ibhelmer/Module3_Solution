@@ -44,12 +44,14 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-#include "I2C_Drv.h"
+#define _BANK0
+#include "portext.h"
 /*
                          Main application
  */
 int main(void)
 {
+    UINT8 x;
     // initialize the device
     SYSTEM_Initialize();
     drvI2CInit();
@@ -59,18 +61,10 @@ int main(void)
         
         if (!SW1_GetValue())
         {
-            if (drvI2CWriteByte(0x00, 0x00, 0x21 ))
-            {
-               LED1_SetHigh();
-            }
-            if (drvI2CWriteByte(0x14, 0xF5, 0x21 ))
-            {
-               LED2_SetHigh();
-            }
-            
+           // portextDir(PORT_A,0x00);
+           // portextWrite(PORT_A,0xF0);
+            x=portextRead(PORT_A);
         }
- 
-        // Add your application code
     }
     
     LED2_SetHigh();

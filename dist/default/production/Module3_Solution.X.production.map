@@ -214,9 +214,9 @@ Discarded input sections
  .reginfo       0x00000000       0x18 build/default/production/mcc_generated_files/interrupt_manager.o
  .reginfo       0x00000000       0x18 build/default/production/mcc_generated_files/mcc.o
  .reginfo       0x00000000       0x18 build/default/production/mcc_generated_files/pin_manager.o
+ .reginfo       0x00000000       0x18 build/default/production/mcc_generated_files/i2c2.o
  .reginfo       0x00000000       0x18 build/default/production/main.o
  .reginfo       0x00000000       0x18 build/default/production/I2C_Drv.o
- .reginfo       0x00000000       0x18 build/default/production/mcc_generated_files/i2c2.o
  .reginfo       0x00000000       0x18 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX250F128B\default_isr_vectors.o
  .discard       0x00000000       0xb0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX250F128B\default_isr_vectors.o
  .reginfo       0x00000000       0x18 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
@@ -295,9 +295,9 @@ LOAD d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4
 LOAD build/default/production/mcc_generated_files/interrupt_manager.o
 LOAD build/default/production/mcc_generated_files/mcc.o
 LOAD build/default/production/mcc_generated_files/pin_manager.o
+LOAD build/default/production/mcc_generated_files/i2c2.o
 LOAD build/default/production/main.o
 LOAD build/default/production/I2C_Drv.o
-LOAD build/default/production/mcc_generated_files/i2c2.o
                 0x00000001                __MPLAB_BUILD = 0x1
 LOAD d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX250F128B\default_isr_vectors.o
 LOAD d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
@@ -884,9 +884,9 @@ END GROUP
  .mdebug.abi32  0xa000002c        0x0 build/default/production/mcc_generated_files/interrupt_manager.o
  .mdebug.abi32  0xa000002c        0x0 build/default/production/mcc_generated_files/mcc.o
  .mdebug.abi32  0xa000002c        0x0 build/default/production/mcc_generated_files/pin_manager.o
+ .mdebug.abi32  0xa000002c        0x0 build/default/production/mcc_generated_files/i2c2.o
  .mdebug.abi32  0xa000002c        0x0 build/default/production/main.o
  .mdebug.abi32  0xa000002c        0x0 build/default/production/I2C_Drv.o
- .mdebug.abi32  0xa000002c        0x0 build/default/production/mcc_generated_files/i2c2.o
  .mdebug.abi32  0xa000002c        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .mdebug.abi32  0xa000002c        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .mdebug.abi32  0xa000002c        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -937,9 +937,9 @@ END GROUP
                                  0x3d (size before relaxing)
  .comment       0x00000000       0x3d build/default/production/mcc_generated_files/mcc.o
  .comment       0x00000000       0x3d build/default/production/mcc_generated_files/pin_manager.o
+ .comment       0x00000000       0x3d build/default/production/mcc_generated_files/i2c2.o
  .comment       0x00000000       0x3d build/default/production/main.o
  .comment       0x00000000       0x3d build/default/production/I2C_Drv.o
- .comment       0x00000000       0x3d build/default/production/mcc_generated_files/i2c2.o
  .comment       0x00000000       0x3d d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .comment       0x00000000       0x3d d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .comment       0x00000000       0x3d d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -966,11 +966,11 @@ END GROUP
  .debug_aranges
                 0x00000040       0x20 build/default/production/mcc_generated_files/pin_manager.o
  .debug_aranges
-                0x00000060       0x20 build/default/production/main.o
+                0x00000060       0x20 build/default/production/mcc_generated_files/i2c2.o
  .debug_aranges
-                0x00000080       0x20 build/default/production/I2C_Drv.o
+                0x00000080       0x20 build/default/production/main.o
  .debug_aranges
-                0x000000a0       0x20 build/default/production/mcc_generated_files/i2c2.o
+                0x000000a0       0x20 build/default/production/I2C_Drv.o
  .debug_aranges
                 0x000000c0       0x20 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_aranges
@@ -988,9 +988,9 @@ END GROUP
  .debug_info    0x00000000      0x323 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_info    0x00000323      0x2d9 build/default/production/mcc_generated_files/mcc.o
  .debug_info    0x000005fc      0x221 build/default/production/mcc_generated_files/pin_manager.o
- .debug_info    0x0000081d      0x50c build/default/production/main.o
- .debug_info    0x00000d29      0x7a0 build/default/production/I2C_Drv.o
- .debug_info    0x000014c9     0x1382 build/default/production/mcc_generated_files/i2c2.o
+ .debug_info    0x0000081d     0x1382 build/default/production/mcc_generated_files/i2c2.o
+ .debug_info    0x00001b9f      0x50c build/default/production/main.o
+ .debug_info    0x000020ab      0x7a0 build/default/production/I2C_Drv.o
  .debug_info    0x0000284b       0xf5 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_info    0x00002940       0xcf d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_info    0x00002a0f       0xd7 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1001,9 +1001,9 @@ END GROUP
  .debug_abbrev  0x00000000       0x95 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_abbrev  0x00000095       0xb8 build/default/production/mcc_generated_files/mcc.o
  .debug_abbrev  0x0000014d       0x4f build/default/production/mcc_generated_files/pin_manager.o
- .debug_abbrev  0x0000019c       0x97 build/default/production/main.o
- .debug_abbrev  0x00000233      0x1a6 build/default/production/I2C_Drv.o
- .debug_abbrev  0x000003d9      0x251 build/default/production/mcc_generated_files/i2c2.o
+ .debug_abbrev  0x0000019c      0x251 build/default/production/mcc_generated_files/i2c2.o
+ .debug_abbrev  0x000003ed       0x97 build/default/production/main.o
+ .debug_abbrev  0x00000484      0x1a6 build/default/production/I2C_Drv.o
  .debug_abbrev  0x0000062a       0x28 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_abbrev  0x00000652       0x28 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_abbrev  0x0000067a       0x28 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1014,9 +1014,9 @@ END GROUP
  .debug_line    0x00000000       0xe8 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_line    0x000000e8      0x14d build/default/production/mcc_generated_files/mcc.o
  .debug_line    0x00000235       0xe8 build/default/production/mcc_generated_files/pin_manager.o
- .debug_line    0x0000031d       0xcd build/default/production/main.o
- .debug_line    0x000003ea      0x193 build/default/production/I2C_Drv.o
- .debug_line    0x0000057d      0x246 build/default/production/mcc_generated_files/i2c2.o
+ .debug_line    0x0000031d      0x246 build/default/production/mcc_generated_files/i2c2.o
+ .debug_line    0x00000563       0xcd build/default/production/main.o
+ .debug_line    0x00000630      0x193 build/default/production/I2C_Drv.o
  .debug_line    0x000007c3       0xa9 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_line    0x0000086c       0x96 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_line    0x00000902       0x9a d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1027,9 +1027,9 @@ END GROUP
  .debug_frame   0x00000000       0x30 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_frame   0x00000030       0xa4 build/default/production/mcc_generated_files/mcc.o
  .debug_frame   0x000000d4       0x30 build/default/production/mcc_generated_files/pin_manager.o
- .debug_frame   0x00000104       0x2c build/default/production/main.o
- .debug_frame   0x00000130      0x110 build/default/production/I2C_Drv.o
- .debug_frame   0x00000240      0x1c4 build/default/production/mcc_generated_files/i2c2.o
+ .debug_frame   0x00000104      0x1c4 build/default/production/mcc_generated_files/i2c2.o
+ .debug_frame   0x000002c8       0x2c build/default/production/main.o
+ .debug_frame   0x000002f4      0x110 build/default/production/I2C_Drv.o
  .debug_frame   0x00000404       0x2c d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_frame   0x00000430       0x20 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_frame   0x00000450       0x20 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1040,9 +1040,9 @@ END GROUP
  .debug_str     0x00000000        0x0 build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_str     0x00000000        0x0 build/default/production/mcc_generated_files/mcc.o
  .debug_str     0x00000000        0x0 build/default/production/mcc_generated_files/pin_manager.o
- .debug_str     0x00000000        0x0 build/default/production/main.o
- .debug_str     0x00000000       0x13 build/default/production/I2C_Drv.o
- .debug_str     0x00000013       0x28 build/default/production/mcc_generated_files/i2c2.o
+ .debug_str     0x00000000       0x28 build/default/production/mcc_generated_files/i2c2.o
+ .debug_str     0x00000028        0x0 build/default/production/main.o
+ .debug_str     0x00000028       0x13 build/default/production/I2C_Drv.o
  .debug_str     0x0000003b        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_str     0x0000003b        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
  .debug_str     0x0000003b        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
@@ -1086,11 +1086,11 @@ END GROUP
  .gnu.attributes
                 0x00000020       0x10 build/default/production/mcc_generated_files/pin_manager.o
  .gnu.attributes
-                0x00000030       0x10 build/default/production/main.o
+                0x00000030       0x10 build/default/production/mcc_generated_files/i2c2.o
  .gnu.attributes
-                0x00000040       0x10 build/default/production/I2C_Drv.o
+                0x00000040       0x10 build/default/production/main.o
  .gnu.attributes
-                0x00000050       0x10 build/default/production/mcc_generated_files/i2c2.o
+                0x00000050       0x10 build/default/production/I2C_Drv.o
  .gnu.attributes
                 0x00000060       0x10 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
  .gnu.attributes
@@ -1440,9 +1440,6 @@ LOAD data_init
 .data           0x00000000        0x0
  .data          0x00000000        0x0 d:/program files (x86)/microchip/xc32/v1.42/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX250F128B\default_isr_vectors.o
 
-.data           0x00000000        0x0
- .data          0x00000000        0x0 build/default/production/mcc_generated_files/i2c2.o
-
 .bss            0x00000000        0x0
  .bss           0x00000000        0x0 build/default/production/I2C_Drv.o
 
@@ -1454,6 +1451,9 @@ LOAD data_init
 
 .data           0x00000000        0x0
  .data          0x00000000        0x0 build/default/production/main.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 build/default/production/mcc_generated_files/i2c2.o
 
 .bss            0x00000000        0x0
  .bss           0x00000000        0x0 build/default/production/mcc_generated_files/pin_manager.o

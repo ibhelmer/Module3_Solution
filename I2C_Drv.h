@@ -70,7 +70,7 @@ extern "C" {
     BOOL drvI2CReadRegisters(UINT8 reg, UINT8* rxPtr, UINT8 len, UINT8 slave_adr);
     BOOL drvI2CWriteRegisters(UINT8 reg, UINT8* data, UINT8 len, UINT8 slave_adr);
     BOOL drvI2CWriteByte(UINT8 reg, UINT8 byte, UINT8 slave_adr );
-    
+    BOOL drvI2CReadByte(UINT8 reg, UINT8 byte, UINT8 slave_adr);
     /* Provide C++ Compatibility */
 #ifdef __cplusplus
 }

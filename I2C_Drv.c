@@ -31,6 +31,7 @@ static BOOL I2CStart(void);
 static void I2CIdle(void);
 static void I2CStop(void);
 static BOOL I2CSendByte(BYTE data);
+
 /* ************************************************************************** */
 /* ************************************************************************** */
 // Section: Local Functions                                                   */
@@ -255,6 +256,9 @@ BOOL drvI2CWriteByte(UINT8 reg, UINT8 byte, UINT8 slave_adr) {
     return ( drvI2CWriteRegisters(reg, &byte, 1, slave_adr));
 }
 
+BOOL drvI2CReadByte(UINT8 reg, UINT8 byte, UINT8 slave_adr) {
+    return ( drvI2CReadRegisters(reg, &byte, 1, slave_adr));
+}
 /* *****************************************************************************
  End of File
  */

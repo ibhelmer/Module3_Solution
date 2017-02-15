@@ -57,16 +57,17 @@ int main(void)
     drvI2CInit();
     //LED1_SetHigh();
     while (1==1)
-    {
-        
+    {    
         if (!SW1_GetValue())
         {
-           // portextDir(PORT_A,0x00);
-           // portextWrite(PORT_A,0xF0);
-            x=portextRead(PORT_A);
+            LED2_SetHigh();
+            portextDir(PORT_A,0x00);
+            portextWrite(PORT_A,0xF0);
+            x=portextRead(PORT_B);
+            LED1_SetHigh();
+            portextWrite(PORT_A,x);
         }
     }
-    
     LED2_SetHigh();
     return -1;
 }

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Module3_Solution
+PROJECTNAME=Module3_Solution.X
 
 # Active Configuration
 DEFAULTCONF=default

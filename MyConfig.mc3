@@ -5,6 +5,10 @@
          <string>class com.microchip.mcc.mcu32.systemManager.DefaultSystemManagerMcu32</string>
       </entry>
       <entry>
+         <string>CORETIMER</string>
+         <string>class com.microchip.mcc.mcu32.modules.coreTimer.CoreTimer</string>
+      </entry>
+      <entry>
          <string>INTERNAL OSCILLATOR</string>
          <string>class com.microchip.mcc.mcu32.systemManager.clk.Clock</string>
       </entry>
@@ -13,12 +17,12 @@
          <string>class com.microchip.mcc.mcu32.systemManager.wdt.Wdt</string>
       </entry>
       <entry>
-         <string>I2C2</string>
-         <string>class com.microchip.mcc.mcu32.modules.i2c_pb.I2C</string>
-      </entry>
-      <entry>
          <string>Pin Module</string>
          <string>class com.microchip.mcc.mcu32.pinManager.PinManager</string>
+      </entry>
+      <entry>
+         <string>I2C2</string>
+         <string>class com.microchip.mcc.mcu32.modules.i2c_pb.I2C</string>
       </entry>
       <entry>
          <string>ICD</string>
@@ -124,6 +128,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="DEVCFG1" settingAlias="WDTPS" alias="PS65536"/>
          <value>1048576</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="CORETIMER" name="CoreTimerPeriod"/>
+         <value>0.00100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="TRISB"/>
@@ -232,6 +240,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="DEVCFG2" settingAlias="FPLLODIV"/>
          <value>DIV_2</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="CTI" settingAlias="flag"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="iocUserSet RB3"/>
@@ -422,6 +434,10 @@
          <value>4</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="CTI" settingAlias="priority"/>
+         <value>1</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELB" settingAlias="ANSB2"/>
          <value>digital</value>
       </entry>
@@ -540,6 +556,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="DEVCFG2" settingAlias="FPLLODIV" alias="DIV_256"/>
          <value>458752</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="CORETIMER" name="CoreTimerFrequency"/>
+         <value>40000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB15"/>
@@ -860,6 +880,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISB" settingAlias="TRISB14"/>
          <value>input</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="Count" settingAlias="Count"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="DEVCFG0" settingAlias="PWP" alias="PWP14K"/>
@@ -2758,6 +2782,10 @@
          <value>3</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CORETIMER" registerAlias="Compare"/>
+         <value>20000</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ODCB" settingAlias="ODCB7" alias="enabled"/>
          <value>1</value>
       </entry>
@@ -2768,6 +2796,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="I2C2" registerAlias="I2CCON" settingAlias="SEN"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="Compare" settingAlias="Compare"/>
+         <value>20000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="anselUserSetRB3"/>
@@ -2852,6 +2884,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IC2R" settingAlias="IC2R"/>
          <value>15</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="CTI" settingAlias="SubPriority"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPDB" settingAlias="CNPDB9"/>
@@ -2939,6 +2975,10 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="DEVCFG2" settingAlias="FPLLODIV" alias="DIV_1"/>
+         <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CORETIMER" registerAlias="Count"/>
          <value>0</value>
       </entry>
       <entry>
@@ -3292,6 +3332,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCCON" settingAlias="CLKLOCK" alias="unlocked"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="CORETIMER" registerAlias="CTI" settingAlias="enable"/>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNENB" settingAlias="CNIEB13"/>
@@ -4070,6 +4114,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="CORETIMER" name="CORETIMER_CTIISRFunction"/>
+         <value>ISR_CORETIMER_CTI</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="I2C2" registerAlias="I2CSTAT" settingAlias="D_A" alias="device address"/>
          <value>0</value>
       </entry>
@@ -4380,32 +4428,40 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>e6c83a50f5c1a2ff297953f2af2a08ef3809a7f84fa977a13e64ebb38c8c0ead</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>c60db8f702dab0495d65d24fc03317cce3c4cacad98785f2ef9d55da533be6c7</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>ec706b364863cfbfdd371244c96295408b2f2987a17d9ac5fa9e41adbb6ef606</hash>
+         <file>mcc_generated_files\coretimer.c</file>
+         <hash>09d23453b16453cb8278571332920efc9cb2d8a6b0a2625c399475233f73346b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\i2c2.c</file>
          <hash>24d937dc3efe5342601e6e49b63a476dafa451b8a41c838699e52d6d9d85b4d2</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\i2c2.h</file>
-         <hash>50e9134da1a306b3007c9aeb9e41b33019e89f23600de1a063a3176e1080a4b8</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.h</file>
          <hash>0b12b177c6d3fb0acb56a33d41e28d0fde46698f1493691ac83a6e2cebea7ca9</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>3792c5ed398f9c05ae351bae8864dcfd981526cbbfce052de0fc889c2e0b5486</hash>
+         <file>mcc_generated_files\i2c2.h</file>
+         <hash>50e9134da1a306b3007c9aeb9e41b33019e89f23600de1a063a3176e1080a4b8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\coretimer.h</file>
+         <hash>42008ba9e320713bf759e3ecaee26aab782fbe3766b3c0493ed0ff3a2d22e27a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>41e8132e36b9052d8729e1a6a7bd2138fce44767fa1f49a9b344dfe97a3c275e</hash>
+         <hash>eafea3a493fb62b295c0a744c3305440d99f97194173a82c3338cc5b507f56fb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>e1a3ccf1303f4050b4d7d5f66bcca1f1038fa38fc6bd47bf61cadb5758266862</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>

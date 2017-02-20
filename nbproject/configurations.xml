@@ -14,9 +14,12 @@
         <itemPath>mcc_generated_files/mcc.h</itemPath>
         <itemPath>mcc_generated_files/pin_manager.h</itemPath>
         <itemPath>mcc_generated_files/i2c2.h</itemPath>
+        <itemPath>mcc_generated_files/coretimer.h</itemPath>
       </logicalFolder>
       <itemPath>I2C_Drv.h</itemPath>
       <itemPath>portext.h</itemPath>
+      <itemPath>Delay.h</itemPath>
+      <itemPath>LCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -32,10 +35,12 @@
         <itemPath>mcc_generated_files/mcc.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/i2c2.c</itemPath>
+        <itemPath>mcc_generated_files/coretimer.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>I2C_Drv.c</itemPath>
       <itemPath>portext.c</itemPath>
+      <itemPath>LCD.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

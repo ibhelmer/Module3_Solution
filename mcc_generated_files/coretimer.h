@@ -1,24 +1,25 @@
-/**
-  @Generated MPLAB(c) Code Configurator Header File
 
-  @Company:
+/**
+  CORETIMER Generated Driver API Header File
+
+  Company:
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.h
+  File Name:
+    coretimer.h
 
-  @Summary:
-    This is the mcc.h file generated using MPLAB(c) Code Configurator
+  @Summary
+    This is the generated header file for the CORETIMER driver using MPLAB(c) Code Configurator
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This header file provides APIs for driver for CORETIMER.
     Generation Information :
         Product Revision  :  MPLAB(c) Code Configurator - 4.15
         Device            :  PIC32MX250F128B
-        Version           :  1.02
+        Driver Version    :  0.5
     The generated drivers are tested against the following:
         Compiler          :  XC32 1.40
-        MPLAB             :  MPLAB X 3.40
+        MPLAB 	          :  MPLAB X 3.40
 */
 
 /*
@@ -43,30 +44,17 @@
     TERMS.
 */
 
-#ifndef MCC_H
-#define	MCC_H
-#include <xc.h>
-#include "pin_manager.h"
-#include <stdint.h>
+#ifndef _CORETIMER_H
+#define _CORETIMER_H
+
+
+/**
+ Section: Included Files
+*/
+
 #include <stdbool.h>
-#include "interrupt_manager.h"
-#include "i2c2.h"
-#include "coretimer.h"
-
-#define _XTAL_FREQ  40000000UL
-
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Unlocks the write protected register to enable any write operation
- *                  MCC GUI
- * @Example
-    SYSTEM_RegUnlock();
- */
-void SYSTEM_RegUnlock(void);
+#include <stdint.h>
+#include <sys/attribs.h>
 
 /**
  * @Param
@@ -76,60 +64,42 @@ void SYSTEM_RegUnlock(void);
     none
 
  * @Description
-    Locks the write protected register to disable any write operation
+    Initializes core timer with appropriate count 
+ *  and compare value as provided in MCC GUI
 
  * @Example
-    SYSTEM_RegLock();
- */
-
-void SYSTEM_RegLock(void);
-
-/**
- * @Param
-    none
-
- * @Returns
-    none
-
- * @Description
-    Initializes the device to the default states configured in the
- *                  MCC GUI
- * @Example
-    SYSTEM_Initialize(void);
- */
-
-void SYSTEM_Initialize(void);
-
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the oscillator to the default states configured in the
- *                  MCC GUI
- * @Example
-    OSCILLATOR_Initialize(void);
- */
-void OSCILLATOR_Initialize(void);
-
-/**
- * @Param
-    none
-
- * @Returns
-    none
-
- * @Description
-    Automatically called whenever there is a un-handled exception
+    CORETIMER_Initialize();
  
- * @Example
+*/
+
+void CORETIMER_Initialize(void);
+
+/**
+ * @Param
     none
+
+ * @Returns
+    Core Timer 32-bit count value.
+
+ * @Description
+ *  Returns the current Core Timer Count.
+
+ * @Example
+    uint32_t count;
+    count = CORETIMER_CountGet();
+
  */
 
-void _general_exception_handler (void);
+uint32_t CORETIMER_CountGet(void);
 
-#endif	/* MCC_H */
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
+#endif
+
+#endif //
+    
 /**
  End of File
 */
